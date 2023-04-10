@@ -30,8 +30,7 @@ void Print(String[] arr)
                 res[i] = "";
             }
 
-	    }
-        
+	    }    
         for(int j = 0; j < res.Length; j++)
         {
              if(j == 0){Console.Write("[");}
