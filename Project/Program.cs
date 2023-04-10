@@ -10,7 +10,36 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → []*/
 
+void Print(String[] arr)
+	{
+        int x = 0;
+        String[] res = new String[arr.Length];
 
+	    int num = arr.GetLength(0);
+	
+	    for (int i = 0; i < num; i++)
+	    {
+            if(i == 0){Console.Write("[");}
+	            Console.Write($" {arr[i]} ");
+            if(i == num - 1){Console.Write("] -> ");}
+
+            if(arr[i].Length <= 3){
+                x++;
+                res[i] = arr[i]; 
+            }else{
+                res[i] = "";
+            }
+
+	    }
+        
+        for(int j = 0; j < res.Length; j++)
+        {
+             if(j == 0){Console.Write("[");}
+	            Console.Write($" {res[j]} ");
+            if(j == num - 1){Console.Write("]");}
+        }
+	}
+	
 String[] MassNums(int num)
 {
     String[] arr = new String[num];
