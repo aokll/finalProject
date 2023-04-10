@@ -59,5 +59,5 @@ String[] MassNums(int num)
     String[] array = MassNums(num);
 
 
-    //Print(array); 
+    Print(array); 
 
