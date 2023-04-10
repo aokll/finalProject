@@ -12,7 +12,6 @@
 
 void Print(String[] arr)
 	{
-        int x = 0;
         String[] res = new String[arr.Length];
 
 	    int num = arr.GetLength(0);
@@ -24,7 +23,6 @@ void Print(String[] arr)
             if(i == num - 1){Console.Write("] -> ");}
 
             if(arr[i].Length <= 3){
-                x++;
                 res[i] = arr[i]; 
             }else{
                 res[i] = "";
